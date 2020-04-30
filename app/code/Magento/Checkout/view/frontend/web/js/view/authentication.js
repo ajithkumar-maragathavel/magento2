@@ -56,6 +56,14 @@ define([
                     fullScreenLoader.stopLoader();
                 });
             }
+        },
+
+        showPassword: function () {
+            if ($("#login-password").attr("type") == "password") {
+                $("#login-password").attr("type", "text");
+            } else {
+                $("#login-password").attr("type", "password");
+            }
         }
     });
 });

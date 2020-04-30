@@ -201,6 +201,14 @@ define([
             }
 
             return false;
+        },
+
+        showPassword: function () {
+            if ($("#customer-password").attr("type") == "password") {
+                $("#customer-password").attr("type", "text");
+            } else {
+                $("#customer-password").attr("type", "password");
+            }
         }
     });
 });
