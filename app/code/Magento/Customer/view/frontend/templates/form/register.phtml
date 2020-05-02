@@ -230,6 +230,7 @@ $formData = $block->getFormData();
                         $escaper->escapeHtmlAttr($block->getRequiredCharacterClassesNumber()) ?>"
                        data-validate="{required:true, 'validate-customer-password':true}"
                        autocomplete="off">
+                <span class="show-password" data-role="show-password" data-mage-init='{"showPassword": {"passwordSelector": "#password"}}'>Show Password</span>
                 <div id="password-strength-meter-container" data-role="password-strength-meter" aria-live="polite">
                     <div id="password-strength-meter" class="password-strength-meter">
                         <?= $escaper->escapeHtml(__('Password Strength')) ?>:
@@ -253,6 +254,7 @@ $formData = $block->getFormData();
                        class="input-text"
                        data-validate="{required:true, equalTo:'#password'}"
                        autocomplete="off">
+                <span class="show-password" data-role="show-password-confirmation" data-mage-init='{"showPassword": {"passwordSelector": "#password-confirmation", "showPasswordSelector": "[data-role=show-password-confirmation]"}}'>Show Password</span>
             </div>
         </div>
         <?= $block->getChildHtml('form_additional_info') ?>

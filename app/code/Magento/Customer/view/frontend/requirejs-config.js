@@ -10,6 +10,7 @@ var config = {
             address:            'Magento_Customer/js/address',
             changeEmailPassword: 'Magento_Customer/js/change-email-password',
             passwordStrengthIndicator: 'Magento_Customer/js/password-strength-indicator',
+            showPassword: 'Magento_Customer/js/show-password',
             zxcvbn: 'Magento_Customer/js/zxcvbn',
             addressValidation: 'Magento_Customer/js/addressValidation',
             'Magento_Customer/address': 'Magento_Customer/js/address',

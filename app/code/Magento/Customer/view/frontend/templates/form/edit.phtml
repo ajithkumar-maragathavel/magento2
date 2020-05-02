@@ -70,6 +70,7 @@ use Magento\Customer\Block\Widget\Name;
                 <input type="password" class="input-text" name="current_password" id="current-password"
                        data-input="current-password"
                        autocomplete="off" />
+                <span class="show-password" data-role="show-current-password" data-mage-init='{"showPassword": {"passwordSelector": "#current-password", "showPasswordSelector": "[data-role=show-current-password]"}}'>Show Password</span>
             </div>
         </div>
         <div class="field new password required" data-container="new-password">
@@ -82,6 +83,7 @@ use Magento\Customer\Block\Widget\Name;
                     data-input="new-password"
                     data-validate="{required:true, 'validate-customer-password':true}"
                     autocomplete="off" />
+                <span class="show-password" data-role="show-password" data-mage-init='{"showPassword": {"passwordSelector": "#password"}}'>Show Password</span>
                 <div id="password-strength-meter-container" data-role="password-strength-meter" aria-live="polite">
                     <div id="password-strength-meter" class="password-strength-meter">
                         <?= $block->escapeHtml(__('Password Strength')) ?>:
@@ -100,6 +102,7 @@ use Magento\Customer\Block\Widget\Name;
                 <input type="password" class="input-text" name="password_confirmation" id="password-confirmation"
                     data-input="confirm-password"
                     autocomplete="off" />
+                <span class="show-password" data-role="show-password-confirmation" data-mage-init='{"showPassword": {"passwordSelector": "#password-confirmation", "showPasswordSelector": "[data-role=show-password-confirmation]"}}'>Show Password</span>
             </div>
         </div>
     </fieldset>

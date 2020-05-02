@@ -29,6 +29,7 @@
                     <label for="pass" class="label"><span><?= $block->escapeHtml(__('Password')) ?></span></label>
                     <div class="control">
                         <input name="login[password]" type="password" <?php if ($block->isAutocompleteDisabled()) : ?> autocomplete="off"<?php endif; ?> class="input-text" id="pass" title="<?= $block->escapeHtmlAttr(__('Password')) ?>" data-validate="{required:true}">
+                            <span class="show-password" data-role="show-password" data-mage-init='{"showPassword": {"passwordSelector": "#pass"}}'>Show Password</span>
                     </div>
                 </div>
                 <?= $block->getChildHtml('form_additional_info') ?>
